@@ -1,0 +1,52 @@
+.text{
+    font-size: 20px;
+    color: rgb(155, 4, 74);
+    background: rgb(1, 206, 233);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 8px;
+    animation: colorful 5s ease infinite;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+@keyframes colorful {
+    0%{box-shadow: 
+        0 0 20px red,
+        0 0 40px blue ;}
+        50% {box-shadow: 
+            0 0 60px green ,
+            0 0 80px blue;}
+            100%{box-shadow: 
+                0 0 20px red,
+                0 0 40px rgb(255, 3, 24);}
+}
+body{
+    background-color: black;
+}
+.life{
+
+    color: white;
+    direction: rtl;
+    margin-top: 40px;
+    font-weight: bold;
+}
+button{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+}
+button:hover{
+    background-color: white;
+    color: #007bff;
+    transform: scale(1.05);
+}

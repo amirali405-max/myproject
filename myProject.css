@@ -1,0 +1,129 @@
+body {
+    background-color: #111;
+
+}
+
+.albums-photo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    animation: img 3s infinite alternate;
+
+}
+
+@keyframes img {
+    0% {
+        box-shadow:
+            0 0 5px red,
+            0 0 10px orange,
+            0 0 15px yellow;
+    }
+
+    50% {
+        box-shadow:
+            0 0 15px purple,
+            0 0 25px blue,
+            0 0 35px cyan;
+    }
+
+    100% {
+        box-shadow:
+            0 0 10px pink,
+            0 0 20px magenta,
+            0 0 30px violet;
+    }
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+.album .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 20px;
+}
+
+.album:hover .overlay {
+    opacity: 1;
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    animation: text 3s infinite ;
+}
+
+@keyframes text {
+    0% {
+        text-shadow:
+            0 0 20px #ee5902, 0 0 40px #ee5902, 0 0 60px #ee5902;
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+    }
+
+    100% {
+        text-shadow:
+            0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff;
+    }
+}
+.about-us{
+    color: red;
+    font-weight: bold;
+    width: 10%;
+    font-size: 20px;
+    border-top-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 5px;
+}
+.about-us:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+footer{
+    margin-top: 200px;
+}
+.sign-in{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: 1s;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+    right:20px ;
+}
+.sing-in:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}

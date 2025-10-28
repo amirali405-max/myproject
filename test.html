@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <input type="text" id="n1" onchange="zf()">
+  <button onclick="zf()" id="print"> print </button>
+  <p id="out"></p>
+  <script>
+    function zf() {
+      number = document.getElementById("n1").value;
+      if (number % 2 == 0) {
+        document.getElementById("out").innerHTML = "زوج"
+        document.getElementById("out").style = "color:red;font-size:20px;"
+      }
+      else {
+        document.getElementById("out").innerHTML = "فرد"
+        document.getElementById("out").style = "color:blue; font-size:20px;"
+      }
+    }
+  </script>
+  <input type="text" id="n2" onchange="mn()">
+  <button onclick="mn()" id="print"> print</button>
+  <p id="out2"></p>
+  <script>
+    function mn() {
+      number = document.getElementById("n2").value;
+      if (number > 0) {
+        document.getElementById("out2").innerHTML = "مثبت";
+        document.getElementById("out2").style = "color:blue ;font-size:20px;"
+      }
+      else {
+        document.getElementById("out2").innerHTML = "منفی";
+        document.getElementById("out2").style = "color:red ;font-size:20px;"
+      }
+    }
+
+  </script>
+  <input type="text" id="num1">
+  <input type="text" id="num2">
+  <button onclick="ab()" onchange="ab()"> print </button>
+  <p id="sum"></p>
+  <script>
+    function ab() {
+      num1 =Number(document.getElementById("num1").value);
+      num2 = Number(document.getElementById("num2").value);
+      sum = num1+num2;
+       document.getElementById("sum").innerHTML=sum;
+       document.getElementById("sum").style = "color:black;"
+    }
+  </script>
+</body>
+
+</html>
